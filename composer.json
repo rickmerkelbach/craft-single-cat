@@ -1,8 +1,8 @@
 {
-  "name": "elivz/craft-single-cat",
+  "name": "rickmerkelbach/craft-single-cat",
   "description": "Field type that allows the user to select a single category from a drop-down.",
   "type": "craft-plugin",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "keywords": [
     "craftcms",
     "craft-plugin",
@@ -12,14 +12,18 @@
     "single category"
   ],
   "support": {
-    "docs": "https://github.com/elivz/craft-single-cat/blob/master/README.md",
-    "issues": "https://github.com/elivz/craft-single-cat/issues"
+    "docs": "https://github.com/rickmerkelbach/craft-single-cat/blob/master/README.md",
+    "issues": "https://github.com/rickmerkelbach/craft-single-cat/issues"
   },
   "license": "MIT",
   "authors": [
     {
       "name": "Eli Van Zoeren",
       "homepage": "https://elivz.com"
+    },
+    {
+      "name": "Rick Merkelbach",
+      "homepage": "https://mockus.nl"
     }
   ],
   "require": {
@@ -33,7 +37,12 @@
   "extra": {
     "name": "Single Cat",
     "handle": "single-cat",
-    "changelogUrl": "https://raw.githubusercontent.com/elivz/craft-single-cat/master/CHANGELOG.md",
+    "changelogUrl": "https://raw.githubusercontent.com/rickmerkelbach/craft-single-cat/master/CHANGELOG.md",
     "class": "elivz\\singlecat\\SingleCat"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "craftcms/rector": "dev-main"
   }
 }

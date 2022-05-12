@@ -67,7 +67,7 @@ class SingleCatField extends BaseRelationField
     /**
      * @inheritdoc
      */
-    public function init()
+    public function init(): void
     {
         parent::init();
         $this->allowLimit = false;
@@ -81,7 +81,7 @@ class SingleCatField extends BaseRelationField
     /**
      * @inheritdoc
      */
-    public function normalizeValue($value, ElementInterface $element = null)
+    public function normalizeValue(mixed $value, ?\craft\base\ElementInterface $element = null): mixed
     {
         if (is_array($value)) {
             /**
@@ -106,7 +106,7 @@ class SingleCatField extends BaseRelationField
     /**
      * @inheritdoc
      */
-    public function getInputHtml($value, ElementInterface $element = null): string
+    public function getInputHtml(mixed $value, ?\craft\base\ElementInterface $element = null): string
     {
         // Make sure the field is set to a valid category group
         if ($this->source) {
